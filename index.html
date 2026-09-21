@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delta Transmission | Driveshaft &amp; Transmission Specialists | Antioch, CA since 1958</title>
+<meta name="description" content="Antioch's transmission and driveshaft specialists since 1958. Driveshaft retubing, lengthening, shortening, U-joints and balancing. ASE certified. Free 27-point inspection. 1105 Sunset Dr, Antioch CA. (925) 754-1870.">
+<!-- pitch demo: keep out of search until the shop approves it -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0a0b0d">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Delta Transmission | Driveshaft &amp; Transmission Specialists, Antioch CA">
+<meta property="og:description" content="Retubing, balancing, U-joints, transfer cases, differentials. ASE certified. Antioch since 1958.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ─────────────────────────────────────────────────────────────────────────
+   DELTA TRANSMISSION, page grammar: CONTINUOUS WORLD
+   One unbroken machine. Scroll is the drivetrain: the shaft turns because
+   you move. Sections do not start and stop, the machine carries you through.
+
+   Palette has SIX roles and ONE accent, no pure black:
+     ground      near-black steel      #0a0b0d
+     ground-alt  raised plate          #121417
+     steel       dividers/edges        #23272e
+     text        primary               #e8ebef
+     muted       secondary (tinted)    #8b95a3
+     fluid       TRANSMISSION FLUID    #ff4d1c   <-- the single accent
+   Type: two families max (Archivo Black display, Archivo text).
+   ───────────────────────────────────────────────────────────────────────── */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --ground:#0a0b0d;
+  --plate:#121417;
+  --steel:#23272e;
+  --steel-hi:#39404a;
+  --text:#e8ebef;
+  --muted:#8b95a3;
+  --fluid:#ff4d1c;
+  --fluid-dim:#7a2410;
+  --wrap:1180px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+body{
+  background:var(--ground);
+  color:var(--text);
+  font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+.display{
+  font-family:'Archivo Black','Arial Black',Impact,system-ui,sans-serif;
+  font-weight:400;
+  line-height:.92;
+  letter-spacing:-.03em;
+  text-transform:uppercase;
+}
+h1.display{font-size:clamp(2.6rem,7.4vw,6.4rem)}
+h2.display{font-size:clamp(2rem,4.6vw,3.9rem)}
+h3.display{font-size:clamp(1.3rem,2.3vw,1.9rem)}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+
+/* ── the load bar: nothing else on the page uses this colour but fluid ── */
+#loadbar{position:fixed;inset:0 0 auto 0;height:3px;background:transparent;z-index:120}
+#loadbar i{display:block;height:100%;width:0;background:var(--fluid)}
+
+/* ── header ── */
+header{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  background:rgba(10,11,13,.82);
+  backdrop-filter:blur(14px) saturate(1.2);
+  border-bottom:1px solid var(--steel);
+}
+.hrow{display:flex;align-items:center;justify-content:space-between;gap:20px;height:66px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand svg{flex:none;display:block}
+.brand b{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;font-size:1.02rem;letter-spacing:-.02em;line-height:1}
+.brand span{display:block;font-size:.63rem;letter-spacing:.19em;color:var(--muted);text-transform:uppercase;margin-top:3px}
+
+.callbtn{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--fluid);color:#120703;text-decoration:none;
+  font-weight:700;font-size:.95rem;letter-spacing:.01em;
+  padding:11px 18px;border-radius:2px;
+  box-shadow:0 0 0 1px #ff6a3d inset, 0 8px 26px -12px var(--fluid);
+  transition:transform .18s var(--ease),box-shadow .18s var(--ease);
+  white-space:nowrap;
+}
+.callbtn:hover{transform:translateY(-2px);box-shadow:0 0 0 1px #ff6a3d inset,0 14px 34px -12px var(--fluid)}
+.callbtn svg{flex:none}
+
+/* their real logo: 479x104 master with its own blue ground, so it is mounted on a
+   plate rather than dropped in as a floating blue box. Brand continuity without
+   letting a 2005-era mark fight the page. */
+.brand img{display:block;width:156px;height:auto;border-radius:3px;box-shadow:0 0 0 1px var(--steel) inset}
+
+/* the real shop photograph, from their Google Business Profile */
+.shopshot{margin-top:56px;border:1px solid var(--steel);border-radius:2px;overflow:hidden;background:var(--plate)}
+.shopshot img{display:block;width:100%;height:auto}
+.shopshot figcaption{
+  padding:15px 20px;font-size:.83rem;color:var(--muted);
+  border-top:1px solid var(--steel);line-height:1.55;
+}
+.shopshot figcaption b{color:var(--text);font-weight:600}
+
+/* ── the machine: fixed stage behind everything ── */
+#stage{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#stage svg{position:absolute;left:50%;top:50%;translate:-50% -50%;opacity:.5}
+@media (max-width:900px){#stage svg{opacity:.3}}
+
+/* the shaft rotates with scroll, see JS. this is the signature move. */
+#shaft{transform-origin:center;will-change:transform}
+
+.vignette{
+  position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(115% 78% at 50% 42%,transparent 34%,rgba(10,11,13,.72) 74%,var(--ground) 100%);
+}
+
+main{position:relative;z-index:2}
+
+/* ── ACT 1 ── */
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 70px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:11px;
+  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+  margin-bottom:26px;
+}
+.eyebrow i{width:34px;height:1px;background:var(--fluid);display:block}
+.hero h1{margin-bottom:24px}
+.hero h1 em{font-style:normal;color:var(--fluid)}
+.hero p{max-width:57ch;color:#c3cad4;font-size:1.06rem}
+.herofault{
+  margin-top:38px;display:flex;flex-wrap:wrap;gap:10px 30px;
+  border-top:1px solid var(--steel);padding-top:24px;
+}
+.herofault div{font-size:.85rem;color:var(--muted)}
+.herofault b{display:block;color:var(--text);font-size:1.5rem;font-family:'Archivo Black',sans-serif;letter-spacing:-.02em;line-height:1.15}
+
+/* ── shared act shell ── */
+.act{padding:112px 0;position:relative}
+.act+.act{border-top:1px solid var(--steel)}
+.lead{max-width:60ch;color:#c3cad4;font-size:1.06rem;margin-top:20px}
+
+/* ── ACT 2: anatomy, numbered but NOT a 01/06 counter. These are real part numbers. ── */
+.anat{display:grid;gap:0;margin-top:56px;border-top:1px solid var(--steel)}
+.part{
+  display:grid;grid-template-columns:78px 1fr minmax(180px,290px);gap:26px;align-items:baseline;
+  padding:26px 0;border-bottom:1px solid var(--steel);
+  transition:background .25s var(--ease),padding-left .25s var(--ease);
+}
+.part:hover{background:linear-gradient(90deg,rgba(255,77,28,.055),transparent 62%);padding-left:14px}
+.part code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.78rem;color:var(--fluid);letter-spacing:.05em}
+.part h3{margin-bottom:6px}
+.part p{color:var(--muted);font-size:.95rem;max-width:52ch}
+.part .fix{font-size:.83rem;color:var(--text);text-align:right;line-height:1.5}
+.part .fix span{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
+@media (max-width:760px){
+  .part{grid-template-columns:1fr;gap:12px;align-items:start}
+  .part .fix{text-align:left}
+}
+
+/* ── ACT 3: THE ENGINEERED PEAK. Most scroll room, most silence before it. ── */
+.peak{
+  background:linear-gradient(180deg,var(--ground) 0%,#160a06 42%,#1d0c06 58%,var(--ground) 100%);
+  padding:150px 0;
+}
+.peakgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+@media (max-width:940px){.peakgrid{grid-template-columns:1fr;gap:44px}}
+.spec{border-top:1px solid #43200f;margin-top:34px}
+.spec div{display:flex;justify-content:space-between;gap:18px;padding:15px 0;border-bottom:1px solid #43200f;font-size:.93rem}
+.spec dt{color:var(--muted)}
+.spec dd{color:var(--text);font-weight:600;text-align:right}
+.spec dd.hot{color:var(--fluid)}
+
+.balance{
+  position:relative;aspect-ratio:1;max-width:430px;margin-inline:auto;
+  display:grid;place-items:center;
+}
+.balance svg{position:absolute;inset:0;width:100%;height:100%}
+.balance .ring{transform-origin:50% 50%;animation:spin 9s linear infinite}
+.balance .ring.r2{animation-duration:14s;animation-direction:reverse}
+.balance .needle{transform-origin:50% 50%;animation:needle 3.4s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes needle{
+  0%,100%{transform:rotate(-38deg)}
+  50%{transform:rotate(16deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .balance .ring,.balance .needle{animation:none}
+}
+.balance .cap{
+  position:absolute;bottom:-6px;left:0;right:0;text-align:center;
+  font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
+}
+
+/* ── ACT 4: capabilities, split NOT as identical cards ── */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:52px}
+@media (max-width:880px){.two{grid-template-columns:1fr;gap:44px}}
+.col h3{color:var(--fluid);margin-bottom:22px;padding-bottom:14px;border-bottom:1px solid var(--steel)}
+.col ul{list-style:none}
+.col li{
+  padding:11px 0 11px 24px;position:relative;font-size:.97rem;color:#c3cad4;
+  border-bottom:1px solid rgba(35,39,46,.55);
+}
+.col li::before{
+  content:'';position:absolute;left:0;top:19px;width:9px;height:2px;background:var(--fluid);
+}
+
+/* ── ACT 5: credibility, a vertical record, not a logo wall ── */
+.record{margin-top:56px;border-left:1px solid var(--steel);padding-left:34px}
+.rec{position:relative;padding:0 0 40px}
+.rec::before{
+  content:'';position:absolute;left:-39px;top:9px;width:9px;height:9px;
+  background:var(--ground);border:2px solid var(--fluid);border-radius:50%;
+}
+.rec b{
+  font-family:'Archivo Black',sans-serif;font-weight:400;font-size:1.42rem;
+  letter-spacing:-.02em;display:block;margin-bottom:7px;
+}
+.rec p{color:var(--muted);font-size:.95rem;max-width:62ch}
+.ratings{margin-top:16px;display:flex;flex-wrap:wrap;gap:14px}
+.rating{
+  border:1px solid var(--steel);background:var(--plate);padding:18px 22px;border-radius:2px;
+  min-width:172px;flex:1 1 172px;
+}
+.rating b{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:2rem;display:block;line-height:1;color:var(--fluid)}
+.rating span{display:block;font-size:.76rem;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:9px}
+
+/* ── ACT 6: visit ── */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:52px}
+@media (max-width:880px){.visit{grid-template-columns:1fr;gap:44px}}
+.hours{list-style:none;border-top:1px solid var(--steel)}
+.hours li{
+  display:flex;justify-content:space-between;gap:16px;padding:15px 0;
+  border-bottom:1px solid var(--steel);font-size:.97rem;
+}
+.hours li.today{color:var(--fluid);font-weight:600}
+.hours span{color:var(--muted)}
+.hours li.today span{color:var(--fluid)}
+
+.notice{
+  margin-top:26px;border:1px solid #43200f;background:linear-gradient(180deg,rgba(255,77,28,.07),transparent);
+  padding:20px 22px;border-radius:2px;
+}
+.notice b{display:block;color:var(--fluid);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:9px}
+.notice p{font-size:.93rem;color:#c3cad4}
+
+form{margin-top:32px;display:grid;gap:14px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.f2{grid-template-columns:1fr}}
+label{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+input,select,textarea{
+  width:100%;background:var(--plate);border:1px solid var(--steel);color:var(--text);
+  padding:13px 14px;font:inherit;font-size:.95rem;border-radius:2px;
+  transition:border-color .18s var(--ease),box-shadow .18s var(--ease);
+}
+input:focus,select:focus,textarea:focus{
+  outline:none;border-color:var(--fluid);box-shadow:0 0 0 3px rgba(255,77,28,.14);
+}
+textarea{min-height:104px;resize:vertical}
+button{
+  font:inherit;font-weight:700;cursor:pointer;border:none;border-radius:2px;
+  background:var(--fluid);color:#120703;padding:15px 20px;
+  box-shadow:0 10px 30px -14px var(--fluid);
+  transition:transform .18s var(--ease);
+}
+button:hover{transform:translateY(-2px)}
+
+/* ── footer ── */
+footer{border-top:1px solid var(--steel);padding:52px 0 40px;background:var(--plate);position:relative;z-index:2}
+.fgrid{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;align-items:flex-start}
+footer p{font-size:.88rem;color:var(--muted);max-width:44ch}
+footer a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--steel-hi)}
+footer a:hover{color:var(--fluid);border-color:var(--fluid)}
+.fnote{margin-top:34px;padding-top:22px;border-top:1px solid var(--steel);font-size:.78rem;color:#5d6672}
+
+/* ── mobile call bar ── */
+#mobilebar{
+  position:fixed;inset:auto 0 0 0;z-index:110;display:none;
+  background:rgba(10,11,13,.94);backdrop-filter:blur(12px);
+  border-top:1px solid var(--steel);padding:11px 16px calc(11px + env(safe-area-inset-bottom));
+}
+#mobilebar a{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--fluid);color:#120703;text-decoration:none;font-weight:700;
+  padding:14px;border-radius:2px;font-size:1rem;
+}
+@media (max-width:760px){
+  #mobilebar{display:block}
+  body{padding-bottom:78px}
+  .act{padding:84px 0}
+  .peak{padding:104px 0}
+}
+
+/* reveal on scroll. FAILS SAFE: nothing is hidden unless JS has confirmed
+   IntersectionObserver works, and a hard timeout reveals everything anyway.
+   A business page must never render blank because a script did not run. */
+.rv{opacity:1;transform:none}
+html.reveal-ready .rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+html.reveal-ready .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html.reveal-ready .rv{opacity:1;transform:none;transition:none}
+}
+  .loc-fig{margin:1.6rem 0 0;max-width:640px;border:1px solid #23282e;border-radius:14px;overflow:hidden;background:#0d0f12}
+  .loc-fig img{display:block;width:100%;height:auto}
+  .loc-fig figcaption{padding:.85rem 1rem;font-size:.86rem;color:#8b95a3;line-height:1.5}
+</style>
+</head>
+<body>
+
+<div id="loadbar"><i></i></div>
+
+<!-- ══ THE STAGE: one fixed machine the whole page travels through ══ -->
+<div id="stage" aria-hidden="true">
+  <svg id="shaft" width="1500" height="1500" viewBox="0 0 1500 1500" fill="none">
+    <defs>
+      <linearGradient id="steelg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#3b434e"/>
+        <stop offset=".48" stop-color="#191d23"/>
+        <stop offset=".52" stop-color="#2b323b"/>
+        <stop offset="1" stop-color="#0d0f12"/>
+      </linearGradient>
+      <radialGradient id="glowg" cx=".5" cy=".5" r=".5">
+        <stop offset="0" stop-color="#ff4d1c" stop-opacity=".30"/>
+        <stop offset="1" stop-color="#ff4d1c" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <circle cx="750" cy="750" r="610" fill="url(#glowg)"/>
+
+    <!-- the shaft body -->
+    <rect x="120" y="730" width="1260" height="40" rx="6" fill="url(#steelg)"/>
+    <!-- yoke flanges -->
+    <rect x="196" y="700" width="30" height="100" rx="4" fill="#2b323b"/>
+    <rect x="1274" y="700" width="30" height="100" rx="4" fill="#2b323b"/>
+    <!-- tube weld seams -->
+    <rect x="470" y="726" width="5" height="48" fill="#4a545f" opacity=".55"/>
+    <rect x="1025" y="726" width="5" height="48" fill="#4a545f" opacity=".55"/>
+    <!-- U-joint crosses -->
+    <g stroke="#5b6674" stroke-width="4" opacity=".75">
+      <line x1="300" y1="690" x2="300" y2="810"/>
+      <line x1="262" y1="750" x2="338" y2="750"/>
+      <line x1="1200" y1="690" x2="1200" y2="810"/>
+      <line x1="1162" y1="750" x2="1238" y2="750"/>
+    </g>
+    <!-- the fluid line: the one accent, running the length of the machine -->
+    <rect x="120" y="745" width="1260" height="3" fill="#ff4d1c" opacity=".85"/>
+  </svg>
+</div>
+<div class="vignette"></div>
+
+<header>
+  <div class="wrap hrow">
+    <a class="brand" href="#top">
+      <img src="assets/delta-mark.svg" alt="Delta Transmission" width="42" height="42">
+      <span style="display:block">
+        <b>Antioch, CA</b>
+        <span>Driveline specialists since 1958</span>
+      </span>
+    </a>
+    <a class="callbtn" href="tel:+19257541870">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+      (925) 754-1870
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ══════ ACT 1 · the fault ══════ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i> Antioch, California · Since 1958</div>
+      <h1 class="display rv">Your driveshaft<br>doesn't fail fast.<br><em>It fails on a schedule.</em></h1>
+      <p class="rv">A shaft that is out of balance by a few thousandths wears the U-joints, then the yoke, then the tail housing. By the time you feel it, it has been building for a year. We measure it, we true it, and we put it back in spec. In house, on Sunset Drive.</p>
+
+      <div class="herofault rv">
+        <div><b>1958</b>Building transmissions and drivelines in Antioch</div>
+        <div><b>ASE</b>Certified technicians on staff</div>
+        <div><b>Diamond Certified</b>Since 2007</div>
+        <div><b>27-point</b>Free vehicle inspection</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ACT 2 · the machine, laid out ══════ -->
+  <section class="act">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i> The driveline</div>
+      <h2 class="display rv">Four things fail.<br>We do all four.</h2>
+      <p class="lead rv">Most shops send driveline work out. We do not. Every part between the flex plate and the wheel bearing is rebuilt at 1105 Sunset Drive.</p>
+
+      <div class="anat">
+        <div class="part rv">
+          <code>YOKE</code>
+          <div><h3 class="display">Transmission &amp; transfer case</h3>
+            <p>Automatic and manual, foreign and domestic. Electrical diagnosis when the problem is a solenoid or a wire and not the gears. Band adjustments. Fluid exchange.</p></div>
+          <div class="fix"><span>We do</span>Rebuild · Replace · Diagnose · Band adjustment</div>
+        </div>
+        <div class="part rv">
+          <code>SHAFT</code>
+          <div><h3 class="display">The tube itself</h3>
+            <p>Lengthening and shortening for conversions, engine swaps and custom builds. Cut, welded and trued on a lathe, not swapped for a guess.</p></div>
+          <div class="fix"><span>We do</span>Lengthen · Shorten · Re-tube · Weld · True</div>
+        </div>
+        <div class="part rv">
+          <code>U-JOINT</code>
+          <div><h3 class="display">U-joints &amp; CV axles</h3>
+            <p>The joint takes the angle, so it takes the wear. Sealed or greasable, pressed and indexed correctly so the shaft stays phased.</p></div>
+          <div class="fix"><span>We do</span>U-joints · CV axle rebuild &amp; replace · Phasing</div>
+        </div>
+        <div class="part rv">
+          <code>BALANCE</code>
+          <div><h3 class="display">Balancing</h3>
+            <p>A shaft is a tuned spring. Get the balance wrong and you feel it at one specific speed, every time. We spin it and correct it until that speed is quiet.</p></div>
+          <div class="fix"><span>We do</span>Spin balance · Correction weights · Runout check</div>
+        </div>
+        <div class="part rv">
+          <code>FLEX</code>
+          <div><h3 class="display">Flex plate &amp; flywheel</h3>
+            <p>Cracks start at the bolt circle and travel. A cracked flex plate sounds exactly like a failing transmission, and it is a fraction of the cost to fix.</p></div>
+          <div class="fix"><span>We do</span>Automatic flex plate · Flywheel replacement</div>
+        </div>
+        <div class="part rv">
+          <code>AXLE</code>
+          <div><h3 class="display">Differentials &amp; bearings</h3>
+            <p>Front and rear differential service, chassis lube, wheel bearing re-packing. The parts that quietly decide how long the rest of it lasts.</p></div>
+          <div class="fix"><span>We do</span>Front &amp; rear diff · Chassis lube · Wheel bearings</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ACT 3 · THE PEAK. Balance. This is what the shop is known for. ══════ -->
+  <section class="act peak">
+    <div class="wrap peakgrid">
+      <div>
+        <div class="eyebrow rv"><i></i> The work almost nobody does in house</div>
+        <h2 class="display rv">Spin it until<br>it goes quiet.</h2>
+        <p class="lead rv">A drive shaft is not a pipe. It is a tuned assembly, and balance is the whole game. Bring it to us the way it is, bent, dented, cut short, or vibrating at 55 and smooth at 70, and we will tell you what it is doing and what it costs to make it stop.</p>
+
+        <dl class="spec rv">
+          <div><dt>Lengthening</dt><dd>Conversions &amp; swaps</dd></div>
+          <div><dt>Shortening</dt><dd>Cut, welded, trued</dd></div>
+          <div><dt>U-joints</dt><dd>Pressed &amp; phased</dd></div>
+          <div><dt>Balancing</dt><dd class="hot">Spin, measure, correct</dd></div>
+          <div><dt>Inspection</dt><dd>Free · 27 points</dd></div>
+        </dl>
+      </div>
+
+      <div class="balance rv">
+        <svg viewBox="0 0 400 400" fill="none" aria-hidden="true">
+          <circle cx="200" cy="200" r="168" stroke="#2a1d16" stroke-width="1"/>
+          <circle cx="200" cy="200" r="132" stroke="#2a1d16" stroke-width="1"/>
+          <g class="ring">
+            <circle cx="200" cy="200" r="150" stroke="#3d2a1f" stroke-width="2" stroke-dasharray="2 14"/>
+          </g>
+          <g class="ring r2">
+            <circle cx="200" cy="200" r="108" stroke="#4a3226" stroke-width="1.5" stroke-dasharray="1 10"/>
+          </g>
+          <circle cx="200" cy="200" r="74" fill="#120d0a" stroke="#5c3a28" stroke-width="2"/>
+          <circle cx="200" cy="200" r="52" stroke="#2a1d16" stroke-width="1"/>
+          <circle cx="200" cy="200" r="8" fill="#ff4d1c"/>
+          <g class="needle">
+            <line x1="200" y1="200" x2="200" y2="128" stroke="#ff4d1c" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <line x1="200" y1="200" x2="200" y2="248" stroke="#6b4433" stroke-width="3" stroke-linecap="round"/>
+          <g stroke="#3d2a1f" stroke-width="2">
+            <line x1="200" y1="90" x2="200" y2="102"/>
+            <line x1="200" y1="298" x2="200" y2="310"/>
+            <line x1="90" y1="200" x2="102" y2="200"/>
+            <line x1="298" y1="200" x2="310" y2="200"/>
+          </g>
+        </svg>
+        <div class="cap">Balance · Runout · Phasing</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ACT 4 · the full capability ══════ -->
+  <section class="act">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i> Foreign &amp; domestic</div>
+      <h2 class="display rv">The whole list,<br>not the short one.</h2>
+      <p class="lead rv">Our technicians have the best training in the industry, and experience with both new and classic transmission work. Ask about warranties before you leave.</p>
+
+      <div class="two">
+        <div class="col rv">
+          <h3 class="display">Transmission</h3>
+          <ul>
+            <li>Transmission service</li>
+            <li>Repair and replacement</li>
+            <li>Automatic transmission repair</li>
+            <li>Manual transmission repair</li>
+            <li>Electrical transmission diagnosis</li>
+            <li>Non-electric transmission diagnosis</li>
+            <li>Manual clutch service and repair</li>
+            <li>Band adjustments</li>
+            <li>Transmission fluid exchange</li>
+            <li>Free transmission diagnosis</li>
+          </ul>
+        </div>
+        <div class="col rv">
+          <h3 class="display">Driveline &amp; axle</h3>
+          <ul>
+            <li>Complete drive shaft service</li>
+            <li>Drive shaft lengthening</li>
+            <li>Drive shaft shortening</li>
+            <li>Drive shaft re-tubing</li>
+            <li>U-joints</li>
+            <li>Drive shaft balancing</li>
+            <li>Rebuild or replace CV axles</li>
+            <li>Transfer cases</li>
+            <li>Front and rear differential service</li>
+            <li>Automatic flex plate replacement</li>
+            <li>Automatic flywheel replacement</li>
+            <li>Chassis lube replacement</li>
+            <li>Re-packing of wheel bearings</li>
+            <li>Free 27-point vehicle inspection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ACT 5 · the record ══════ -->
+  <section class="act">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i> Why Antioch keeps coming back</div>
+      <h2 class="display rv">A long time<br>on one street.</h2>
+
+      <div class="record">
+        <div class="rec rv">
+          <b>1958</b>
+          <p>The shop has been servicing, repairing, replacing and rebuilding transmissions on Sunset Drive in Antioch since 1958. Long enough that we have fixed cars belonging to the grandchildren of our first customers.</p>
+        </div>
+        <div class="rec rv">
+          <b>Chet Kniss, owner</b>
+          <p>Chet has been in the automotive industry for over 26 years, and spent 15 of them mastering the repair and rebuild of automatic and standard transmissions before taking over the shop. When you call, you are talking to a shop that is run by the person doing the work.</p>
+        </div>
+        <div class="rec rv">
+          <b>Diamond Certified since 2007</b>
+          <p>Independently rated on customer surveys rather than on advertising. Independently owned and operated, which is why the prices stay where they are and the answer stays straight.</p>
+        </div>
+        <div class="rec rv">
+          <b>ASE certified technicians</b>
+          <p>Automotive Service Excellence certification on staff, and the state-of-the-art diagnostic computer equipment to go with it. The right diagnosis the first time.</p>
+        </div>
+      </div>
+
+      <figure class="shopshot rv">
+        <img src="assets/shop-floor.jpg" alt="The Delta Transmission shop floor in Antioch, with two vehicles raised on lifts and diagnostic equipment along the back wall" width="1704" height="895" loading="lazy" decoding="async">
+        <figcaption>
+          <b>The shop floor at 1105 Sunset Drive.</b> Two lifts, and a wall of diagnostic equipment that most shops this size do not carry. The classic on the left is the kind of car that shows up here, and the reason the word "classic" is in our list of work.
+        </figcaption>
+      </figure>
+
+      <div class="ratings rv">
+        <div class="rating"><b>4.5</b><span>Google · 76 reviews</span></div>
+        <div class="rating"><b>4.3</b><span>Yelp · 48 reviews</span></div>
+        <div class="rating"><b>2007</b><span>Diamond Certified</span></div>
+        <div class="rating"><b>27</b><span>Point free inspection</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ ACT 6 · visit ══════ -->
+  <section class="act">
+    <div class="wrap">
+      <div class="eyebrow rv"><i></i> 1105 Sunset Drive</div>
+      <h2 class="display rv">Bring it in.<br>We'll tell you straight.</h2>
+
+      <div class="visit">
+        <div class="rv">
+          <h3 class="display" style="color:var(--fluid);margin-bottom:20px">Hours</h3>
+          <ul class="hours" id="hours">
+            <li data-d="1"><span>Monday</span><b>7:00 am – 5:30 pm</b></li>
+            <li data-d="2"><span>Tuesday</span><b>7:00 am – 5:30 pm</b></li>
+            <li data-d="3"><span>Wednesday</span><b>7:00 am – 5:30 pm</b></li>
+            <li data-d="4"><span>Thursday</span><b>7:00 am – 5:30 pm</b></li>
+            <li data-d="5"><span>Friday</span><b>Closed</b></li>
+            <li data-d="6"><span>Saturday</span><b>Closed</b></li>
+            <li data-d="0"><span>Sunday</span><b>Closed</b></li>
+          </ul>
+
+          <div class="notice">
+            <b>Night owl or early bird?</b>
+            <p>If you need to drop the vehicle outside business hours, print our Early Bird and Night Owl drop-off form and leave it with the keys. Your vehicle is in the yard on Sunset Drive, not on a street.</p>
+          </div>
+
+          <div class="notice" style="border-color:var(--steel);background:var(--plate)">
+            <b style="color:var(--muted)">Good to know</b>
+            <p>Free transmission diagnosis. Free 27-point inspection. Cash and card accepted, no checks. Foreign and domestic, new and classic.</p>
+          </div>
+
+          <p style="margin-top:28px;font-size:1.05rem">
+            <strong>1105 Sunset Dr, Antioch, CA 94509</strong><br>
+            <a href="tel:+19257541870" style="color:var(--fluid);text-decoration:none;font-weight:700">(925) 754-1870</a>
+          </p>
+        </div>
+
+        <div class="rv">
+          <h3 class="display" style="color:var(--fluid);margin-bottom:20px">Request an estimate</h3>
+          <p style="color:#c3cad4;font-size:.95rem;margin-bottom:8px">Tell us what it's doing. If it is a shaft, tell us the speed where it vibrates. That single number narrows it down faster than anything else.</p>
+
+          <form action="https://formsubmit.co/deltatransmission" method="POST">
+            <div class="f2">
+              <div><label for="name">Name</label><input id="name" name="name" required></div>
+              <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
+            </div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email"></div>
+            <div class="f2">
+              <div><label for="year">Year</label><input id="year" name="year" inputmode="numeric"></div>
+              <div><label for="make">Make</label><input id="make" name="make"></div>
+            </div>
+            <div><label for="model">Model</label><input id="model" name="model"></div>
+            <div>
+              <label for="svc">What do you need</label>
+              <select id="svc" name="service">
+                <option>Drive shaft re-tube</option>
+                <option>Drive shaft lengthening</option>
+                <option>Drive shaft shortening</option>
+                <option>Drive shaft balancing or vibration</option>
+                <option>U-joints</option>
+                <option>Transmission service</option>
+                <option>Transmission repair or replacement</option>
+                <option>Transmission electrical diagnosis</option>
+                <option>Manual clutch</option>
+                <option>Transfer case</option>
+                <option>Front or rear differential</option>
+                <option>CV axles</option>
+                <option>Flex plate or flywheel</option>
+                <option>27 point vehicle inspection</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div><label for="symptoms">What it's doing</label><textarea id="symptoms" name="symptoms" placeholder="Vibrates at 55 and smooth at 70. Clunk on takeoff. Slipping between 2nd and 3rd."></textarea></div>
+            <button type="submit">Send it to the shop</button>
+            <p style="font-size:.76rem;color:#5d6672;margin-top:4px">Or just call <a href="tel:+19257541870" style="color:var(--muted)">(925) 754-1870</a>, Monday to Thursday, 7:00 to 5:30.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <b class="display" style="font-size:1.15rem;display:block;margin-bottom:12px">Delta Transmission</b>
+        <p>Transmission and driveline specialists at 1105 Sunset Dr, Antioch, California. Independently owned and operated since 1958.</p>
+      </div>
+      <div>
+        <p style="margin-bottom:8px"><strong style="color:var(--text)">Call</strong><br><a href="tel:+19257541870">(925) 754-1870</a></p>
+        <p><strong style="color:var(--text)">Visit</strong><br>1105 Sunset Dr<br>Antioch, CA 94509</p>
+      </div>
+      <div>
+        <p style="margin-bottom:8px"><strong style="color:var(--text)">Hours</strong><br>Mon – Thu · 7:00 am – 5:30 pm</p>
+        <p><strong style="color:var(--text)">Payment</strong><br>Cash &amp; card. No checks.</p>
+      </div>
+    </div>
+    <p class="fnote">
+      Driveshaft lengthening, shortening, re-tubing, U-joints and balancing · transmission repair and replacement ·
+      differentials, transfer cases and CV axles · free 27-point inspection · ASE certified · Diamond Certified since 2007.
+      <br><br>© <span id="yr"></span> Delta Transmission, Antioch CA.
+    </p>
+  </div>
+
+      <figure class="loc-fig">
+        <img src="assets/storefront.jpg" alt="Delta Transmission, 1105 Sunset Dr, Antioch, seen from Sunset Drive" loading="lazy" width="1200" height="757">
+        <figcaption>1105 Sunset Dr. Look for the blue sign, and whatever is on the lifts that week.</figcaption>
+      </figure>
+</footer>
+
+<div id="mobilebar"><a href="tel:+19257541870">Call the shop · (925) 754-1870</a></div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ── THE SIGNATURE MOVE ─────────────────────────────────────────────
+     The drive shaft turns because YOU move. Scroll drives rotation, so the
+     page and the machine are the same object. No other shop site does this,
+     and it cannot be lifted into a template without the whole grammar.  */
+  var shaft = document.getElementById('shaft');
+  var bar   = document.querySelector('#loadbar i');
+  var doc   = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Time-based throttle, NOT a requestAnimationFrame gate.
+     An rAF-gated flag deadlocks: if rAF is ever throttled or paused (background
+     tab, battery saver, some mobile browsers) the flag stays true forever and the
+     handler never runs again, freezing the shaft and the load bar with no
+     recovery. A timestamp cannot get stuck. */
+  var lastRun = 0;
+  function apply(){
+    var y = window.scrollY || window.pageYOffset || 0;
+    var max = Math.max(1, doc.scrollHeight - window.innerHeight);
+    var p = Math.min(1, y / max);
+
+    if (!reduce && shaft){
+      // ~3 turns over the length of the page, plus a slight drift so the machine
+      // feels mounted rather than pasted on.
+      shaft.style.transform =
+        'rotate(' + (y * 0.21).toFixed(2) + 'deg) scale(' + (1 + p * 0.16).toFixed(3) + ')';
+    }
+    if (bar) bar.style.width = (p * 100).toFixed(2) + '%';
+  }
+  function onScroll(){
+    var now = Date.now();
+    if (now - lastRun < 15) return;   // ~60fps, and it can never lock up
+    lastRun = now;
+    apply();
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', apply, {passive:true});
+  apply();
+
+  /* ── reveal ── FAILS SAFE.
+     Content is visible by default in CSS. We only opt INTO hiding once we have
+     confirmed IntersectionObserver exists and works, and a hard timer reveals
+     everything regardless. A shop's page must never render blank because a
+     script did not run. */
+  var rvs = document.querySelectorAll('.rv');
+  function revealAll(){ for (var i=0;i<rvs.length;i++) rvs[i].classList.add('in'); }
+
+  if ('IntersectionObserver' in window && !reduce){
+    try {
+      doc.classList.add('reveal-ready');
+      var io = new IntersectionObserver(function(entries){
+        for (var i=0;i<entries.length;i++){
+          if (entries[i].isIntersecting){ entries[i].target.classList.add('in'); io.unobserve(entries[i].target); }
+        }
+      }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+      for (var j=0;j<rvs.length;j++) io.observe(rvs[j]);
+      // hard safety net: if IO has not done its job, show everything anyway
+      setTimeout(revealAll, 2500);
+    } catch(e){
+      doc.classList.remove('reveal-ready');
+      revealAll();
+    }
+  } else {
+    revealAll();
+  }
+
+  /* ── today's hours, marked honestly. Friday–Sunday really are closed. ── */
+  try {
+    var d = new Date().getDay();
+    var row = document.querySelector('#hours li[data-d="' + d + '"]');
+    if (row) row.classList.add('today');
+  } catch(e){}
+
+  var yr = document.getElementById('yr');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Delta Transmission",
+  "description": "Transmission and driveline specialists in Antioch, California since 1958. Drive shaft re-tubing, lengthening, shortening, U-joints and balancing. Automatic and manual transmission repair, differentials, transfer cases and CV axles. ASE certified, Diamond Certified since 2007.",
+  "telephone": "+1-925-754-1870",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1105 Sunset Dr",
+    "addressLocality": "Antioch",
+    "addressRegion": "CA",
+    "postalCode": "94509",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 37.9985, "longitude": -121.8147 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+    "opens": "07:00",
+    "closes": "17:30"
+  }],
+  "priceRange": "$$",
+  "foundingDate": "1958",
+  "areaServed": [
+    {"@type":"City","name":"Antioch"},
+    {"@type":"City","name":"Oakley"},
+    {"@type":"City","name":"Brentwood"},
+    {"@type":"City","name":"Pittsburg"},
+    {"@type":"City","name":"Concord"},
+    {"@type":"City","name":"Walnut Creek"}
+  ],
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drive shaft re-tubing"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drive shaft lengthening and shortening"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Drive shaft balancing"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"U-joint replacement"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Automatic transmission repair"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manual transmission repair"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Electrical transmission diagnosis"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Transfer case service"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Front and rear differential service"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"CV axle rebuild and replacement"}},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Free 27-point vehicle inspection"}}
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "76",
+    "bestRating": "5"
+  }
+}
+</script>
+</body>
+</html>

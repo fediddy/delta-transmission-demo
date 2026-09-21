@@ -1,0 +1,7 @@
+gbp/
+photo-work/
+logo-src/out/
+shots/
+*.mjs
+_l.html
+.page-grammar.json
