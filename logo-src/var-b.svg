@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Delta Transmission">
+  <title>Variant B: the yoke and joint are the focal point</title>
+  <defs>
+    <linearGradient id="steelB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#f2f6fa"/>
+      <stop offset=".38"  stop-color="#c8d0da"/>
+      <stop offset=".60"  stop-color="#79838f"/>
+      <stop offset="1"    stop-color="#3f454d"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M48 9 L88 79 L8 79 Z" fill="none" stroke="#c2cad4" stroke-width="6.5"
+        stroke-linejoin="round"/>
+  <path d="M8 79 L88 79" stroke="#c2cad4" stroke-width="6.5" stroke-linecap="round"/>
+
+  <!-- tube, entering from the left and ending at the yoke -->
+  <rect x="1" y="55" width="52" height="11" rx="2.6" fill="url(#steelB)"/>
+  <rect x="3" y="56.8" width="48" height="2.4" rx="1.2" fill="#ffffff" opacity=".5"/>
+  <rect x="1" y="65" width="52" height="1.4" fill="#000000" opacity=".26"/>
+
+  <!-- the yoke: two ears bracketing the joint. this is the driveshaft tell. -->
+  <path d="M53 47.5 L53 74" stroke="#9aa4b1" stroke-width="4.6" stroke-linecap="round"/>
+  <path d="M53 47.5 C62 47.5 67 51 70 55.5" stroke="#9aa4b1" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <path d="M53 74 C62 74 67 70.5 70 66" stroke="#9aa4b1" stroke-width="4.2"
+        fill="none" stroke-linecap="round"/>
+  <circle cx="69.5" cy="55.5" r="3.4" fill="#0a0b0d" stroke="#9aa4b1" stroke-width="3"/>
+  <circle cx="69.5" cy="66"   r="3.4" fill="#0a0b0d" stroke="#9aa4b1" stroke-width="3"/>
+
+  <!-- the cross, sitting in the yoke. the part they actually replace. -->
+  <g stroke="#ff4d1c" stroke-width="3.6" stroke-linecap="round">
+    <line x1="67" y1="51.5" x2="67" y2="70"/>
+    <line x1="58.5" y1="60.7" x2="75.5" y2="60.7"/>
+  </g>
+  <circle cx="67" cy="60.7" r="2.7" fill="#0a0b0d" stroke="#ff4d1c" stroke-width="1.9"/>
+</svg>

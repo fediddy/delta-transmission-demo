@@ -52,13 +52,13 @@
   --ease:cubic-bezier(.2,.7,.2,1);
 }
 
-html{scroll-behavior:smooth}
+html{font-size:112.5%;-webkit-text-size-adjust:100%}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 body{
   background:var(--ground);
   color:var(--text);
-  font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-size:1.02rem;line-height:1.72;font-family:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
   font-size:17px;
   line-height:1.62;
   -webkit-font-smoothing:antialiased;
@@ -93,7 +93,7 @@ header{
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
 .brand svg{flex:none;display:block}
 .brand b{font-family:'Archivo Black','Arial Black',sans-serif;font-weight:400;font-size:1.02rem;letter-spacing:-.02em;line-height:1}
-.brand span{display:block;font-size:.63rem;letter-spacing:.19em;color:var(--muted);text-transform:uppercase;margin-top:3px}
+.brand span{display:block;font-size:0.8rem;letter-spacing:.19em;color:var(--muted);text-transform:uppercase;margin-top:3px}
 
 .callbtn{
   display:inline-flex;align-items:center;gap:9px;
@@ -140,7 +140,7 @@ main{position:relative;z-index:2}
 .hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 70px}
 .eyebrow{
   display:inline-flex;align-items:center;gap:11px;
-  font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
+  font-size:0.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);
   margin-bottom:26px;
 }
 .eyebrow i{width:34px;height:1px;background:var(--fluid);display:block}
@@ -167,11 +167,11 @@ main{position:relative;z-index:2}
   transition:background .25s var(--ease),padding-left .25s var(--ease);
 }
 .part:hover{background:linear-gradient(90deg,rgba(255,77,28,.055),transparent 62%);padding-left:14px}
-.part code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:.78rem;color:var(--fluid);letter-spacing:.05em}
+.part code{font-family:ui-monospace,'SF Mono',Menlo,monospace;font-size:0.8rem;color:var(--fluid);letter-spacing:.05em}
 .part h3{margin-bottom:6px}
 .part p{color:var(--muted);font-size:.95rem;max-width:52ch}
 .part .fix{font-size:.83rem;color:var(--text);text-align:right;line-height:1.5}
-.part .fix span{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
+.part .fix span{display:block;color:var(--muted);font-size:0.8rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
 @media (max-width:760px){
   .part{grid-template-columns:1fr;gap:12px;align-items:start}
   .part .fix{text-align:left}
@@ -208,7 +208,7 @@ main{position:relative;z-index:2}
 }
 .balance .cap{
   position:absolute;bottom:-6px;left:0;right:0;text-align:center;
-  font-size:.7rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
+  font-size:0.8rem;letter-spacing:.19em;text-transform:uppercase;color:var(--muted);
 }
 
 /* ── ACT 4: capabilities, split NOT as identical cards ── */
@@ -242,7 +242,7 @@ main{position:relative;z-index:2}
   min-width:172px;flex:1 1 172px;
 }
 .rating b{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:2rem;display:block;line-height:1;color:var(--fluid)}
-.rating span{display:block;font-size:.76rem;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:9px}
+.rating span{display:block;font-size:0.8rem;color:var(--muted);letter-spacing:.11em;text-transform:uppercase;margin-top:9px}
 
 /* ── ACT 6: visit ── */
 .visit{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:52px}
@@ -260,13 +260,13 @@ main{position:relative;z-index:2}
   margin-top:26px;border:1px solid #43200f;background:linear-gradient(180deg,rgba(255,77,28,.07),transparent);
   padding:20px 22px;border-radius:2px;
 }
-.notice b{display:block;color:var(--fluid);font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:9px}
+.notice b{display:block;color:var(--fluid);font-size:0.8rem;letter-spacing:.15em;text-transform:uppercase;margin-bottom:9px}
 .notice p{font-size:.93rem;color:#c3cad4}
 
 form{margin-top:32px;display:grid;gap:14px}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:560px){.f2{grid-template-columns:1fr}}
-label{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
+label{font-size:0.8rem;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px}
 input,select,textarea{
   width:100%;background:var(--plate);border:1px solid var(--steel);color:var(--text);
   padding:13px 14px;font:inherit;font-size:.95rem;border-radius:2px;
@@ -290,7 +290,7 @@ footer{border-top:1px solid var(--steel);padding:52px 0 40px;background:var(--pl
 footer p{font-size:.88rem;color:var(--muted);max-width:44ch}
 footer a{color:var(--text);text-decoration:none;border-bottom:1px solid var(--steel-hi)}
 footer a:hover{color:var(--fluid);border-color:var(--fluid)}
-.fnote{margin-top:34px;padding-top:22px;border-top:1px solid var(--steel);font-size:.78rem;color:#5d6672}
+.fnote{margin-top:34px;padding-top:22px;border-top:1px solid var(--steel);font-size:0.8rem;color:#7e8896}
 
 /* ── mobile call bar ── */
 #mobilebar{
@@ -322,6 +322,14 @@ html.reveal-ready .rv.in{opacity:1;transform:none}
   .loc-fig{margin:1.6rem 0 0;max-width:640px;border:1px solid #23282e;border-radius:14px;overflow:hidden;background:#0d0f12}
   .loc-fig img{display:block;width:100%;height:auto}
   .loc-fig figcaption{padding:.85rem 1rem;font-size:.86rem;color:#8b95a3;line-height:1.5}
+
+/* 60+ readability pass. Larger controls, clearer focus. */
+.rv{transition-duration:.45s}
+@media (prefers-reduced-motion:reduce){.rv{transition:none!important;transform:none!important}}
+input,select,textarea{font-size:1.05rem;min-height:52px;padding:.85rem 1rem}
+button,.btn{min-height:54px;font-size:1.06rem}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid #ff4d1c;outline-offset:3px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -654,7 +662,7 @@ html.reveal-ready .rv.in{opacity:1;transform:none}
             </div>
             <div><label for="symptoms">What it's doing</label><textarea id="symptoms" name="symptoms" placeholder="Vibrates at 55 and smooth at 70. Clunk on takeoff. Slipping between 2nd and 3rd."></textarea></div>
             <button type="submit">Send it to the shop</button>
-            <p style="font-size:.76rem;color:#5d6672;margin-top:4px">Or just call <a href="tel:+19257541870" style="color:var(--muted)">(925) 754-1870</a>, Monday to Thursday, 7:00 to 5:30.</p>
+            <p style="font-size:0.8rem;color:#7e8896;margin-top:4px">Or just call <a href="tel:+19257541870" style="color:var(--muted)">(925) 754-1870</a>, Monday to Thursday, 7:00 to 5:30.</p>
           </form>
         </div>
       </div>

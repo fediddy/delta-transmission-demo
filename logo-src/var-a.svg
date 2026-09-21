@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" role="img" aria-label="Delta Transmission">
+  <title>Variant A: driveshaft with a yoke at each end</title>
+  <defs>
+    <linearGradient id="steelA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"    stop-color="#f2f6fa"/>
+      <stop offset=".38"  stop-color="#c8d0da"/>
+      <stop offset=".60"  stop-color="#79838f"/>
+      <stop offset="1"    stop-color="#3f454d"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M48 9 L88 79 L8 79 Z" fill="none" stroke="#c2cad4" stroke-width="6.5"
+        stroke-linejoin="round"/>
+  <path d="M8 79 L88 79" stroke="#c2cad4" stroke-width="6.5" stroke-linecap="round"/>
+
+  <!-- welded yoke bosses at each end of the tube -->
+  <rect x="30" y="50" width="6.5" height="21" rx="1.4" fill="#8d97a3"/>
+  <rect x="59.5" y="50" width="6.5" height="21" rx="1.4" fill="#8d97a3"/>
+  <path d="M27 50 C30 48.6 33.4 48.6 36.5 50" stroke="#c8d0da" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M59.5 50 C62.6 48.6 66 48.6 69 50" stroke="#c8d0da" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <!-- the tube itself -->
+  <rect x="1" y="54.5" width="94" height="12" rx="3" fill="url(#steelA)"/>
+  <rect x="3" y="56.4" width="90" height="2.6" rx="1.3" fill="#ffffff" opacity=".5"/>
+  <rect x="1" y="65" width="94" height="1.5" fill="#000000" opacity=".28"/>
+
+  <!-- U-joint cross, seated at the centre of the tube -->
+  <g stroke="#ff4d1c" stroke-width="3.4" stroke-linecap="round">
+    <line x1="48" y1="52.6" x2="48" y2="68.4"/>
+    <line x1="39.8" y1="60.5" x2="56.2" y2="60.5"/>
+  </g>
+  <circle cx="48" cy="60.5" r="2.6" fill="#0a0b0d" stroke="#ff4d1c" stroke-width="1.8"/>
+</svg>
