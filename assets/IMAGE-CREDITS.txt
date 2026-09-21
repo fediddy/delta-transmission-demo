@@ -1,0 +1,43 @@
+Image credits and licence terms
+================================
+
+These images are used under Creative Commons licences that REQUIRE
+attribution. This file must ship with the site, and the credits must
+stay visible on the page. If the credits are removed, the images must
+be removed too.
+
+part-driveshaft.jpg  and  part-driveshaft-sm.jpg
+  Title:   Cardan Shaft
+  Source:  Wikimedia Commons
+  Licence: CC BY-SA 3.0
+  Page:    https://commons.wikimedia.org/wiki/File:Cardan_Shaft.jpg
+
+part-ujoint.jpg
+  Title:   Universal joints shaft
+  Source:  Wikimedia Commons
+  Licence: CC BY-SA 3.0
+  Page:    https://commons.wikimedia.org/wiki/File:Universal_joints_shaft.jpg
+
+ABOUT SHARE-ALIKE
+CC BY-SA carries a share-alike clause. Display on a website is fine. If
+these were ever folded into merchandise, printed collateral, or anything
+sold commercially, have a lawyer review that use first. Replacing them
+with the shop's own photographs removes the question completely.
+
+THE FORD C6 PROBLEM
+--------------------
+No photograph of a Ford C6 transmission exists under any free licence.
+Searches across Wikimedia Commons and Openverse for C6, Ford C6, and
+C6 automatic returned only Corvettes, Citroens, Audi A6s, a vertebra,
+and electron micrographs. The term collides with too many other things.
+
+The only free automatic-transmission photographs available are trade-show
+cutaways of Japanese units, photographed on museum stands with signage
+and onlookers in frame. One was downloaded and rejected outright: it is a
+Toyota/Lexus hybrid powertrain on a mirrored display pedestal with an
+EXIT sign and Toyota branding legible inside the crop. Wrong brand,
+wrong technology, and another company's trademark. Do not re-add it.
+
+A real C6 has to come from the shop. They work on these daily and will
+have one on a bench. A phone photograph of their own C6 beats every
+free image that exists.
