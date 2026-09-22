@@ -12,11 +12,13 @@ part-driveshaft.jpg  and  part-driveshaft-sm.jpg
   Licence: CC BY-SA 3.0
   Page:    https://commons.wikimedia.org/wiki/File:Cardan_Shaft.jpg
 
-part-ujoint.jpg
-  Title:   Universal joints shaft
+part-ford-toploader.jpg
+  Title:   Toploader 4speed Transmission
   Source:  Wikimedia Commons
-  Licence: CC BY-SA 3.0
-  Page:    https://commons.wikimedia.org/wiki/File:Universal_joints_shaft.jpg
+  Licence: PUBLIC DOMAIN (no conditions at all)
+  Note:    A Ford Toploader 4-speed manual, introduced 1964.
+           Uploaded by Wikipedia user Bill Wrigley.
+  Page:    https://commons.wikimedia.org/wiki/File:Toploader_4speed_Transmission.jpg
 
 ABOUT SHARE-ALIKE
 CC BY-SA carries a share-alike clause. Display on a website is fine. If
@@ -31,7 +33,16 @@ Searches across Wikimedia Commons and Openverse for C6, Ford C6, and
 C6 automatic returned only Corvettes, Citroens, Audi A6s, a vertebra,
 and electron micrographs. The term collides with too many other things.
 
-The only free automatic-transmission photographs available are trade-show
+Category:Ford C6 transmission exists on Commons but contains ZERO files.
+That is the definitive answer: the category was created and never filled.
+
+WHAT IS AVAILABLE FOR FORD
+--------------------------
+Category:Ford transmissions holds three files, and Category:Ford automatic
+transmissions holds five. Of those, four are patent drawings or museum
+cutaways. The one genuinely usable photograph is the Toploader above.
+
+The other free automatic-transmission photographs available are trade-show
 cutaways of Japanese units, photographed on museum stands with signage
 and onlookers in frame. One was downloaded and rejected outright: it is a
 Toyota/Lexus hybrid powertrain on a mirrored display pedestal with an
